@@ -267,3 +267,26 @@ main{
 .calendar__text h3{
     font-size: 37px;
 }
+.calendar__text button{
+    width: 100px;
+    height: 45px;
+    color: #1A1A1A;
+    background-color: #806C92;
+    border: none;
+    border-radius: 7px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.calendar__text button:hover{
+    background-color: #594a66;
+}
+.calendar__box{
+    width: 50%;
+    height: 240px;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    box-shadow: 12px 12px 10px #806C92;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
