@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/65837733d8.js" crossorigin="anonymous"></script>
     <title>DanceStudio</title>
 </head>
 <body>
@@ -12,52 +14,134 @@
         <nav class="nav">
             <div class="nav__logo">
                 <a href="./index.html">
-                    <img src="./img/logo.png" alt="logo">
+                    <img src="./img/Frame.svg" alt="logo">
                 </a>
             </div>
-            <ul class="nav__items">
+            <ul class="nav__box">
                 <li class="nav__item">
-                    <a href="./index.html" class="nav__enlaces">Inicio</a>
+                    <a href="./index.html" class="nav__link">Inicio</a>
                 </li>
                 <li class="nav__item">
-                    <a href="./calendario.html" class="nav__enlaces">Calendario</a>
+                    <a href="./calendario.html" class="nav__link">Calendario</a>
                 </li>
                 <li class="nav__item">
-                    <a href="./clases.html" class="nav__enlaces">Clases</a>
+                    <a href="./clases.html" class="nav__link">Clases</a>
                 </li>
                 <li class="nav__item">
-                    <a href="./profesores.html" class="nav__enlaces">Profesores</a>
+                    <a href="./profesores.html" class="nav__link">Profesores</a>
                 </li>
                 <li class="nav__item">
-                    <a href="./contactanos.html" class="nav__enlaces">Contactanos</a>
+                    <a href="./contactanos.html" class="nav__link">Contactanos</a>
                 </li>
             </ul>
         </nav>
     </header> <!--Final del Header-->
-    <main> <!--Inicio de Main-->
-        <h2 class="main__title">Profesores</h2>
-        <section class="main__container-p"></section>
-        <section class="main__container-p"></section>
-        <section class="main__container-p"></section>
-        <section class="main__container-p"></section>
-    </main> <!--Final de Main-->
+
+    <section class="teachers"><!--Inicio de section-->
+        <div class="teachers__maintitle">
+            <h2>Profesores</h2>
+        </div>
+        <div class="teachers__container">
+            <div class="teachers__box">
+                <div class="teachers__title">
+                    <h3>Salsa</h3>
+                </div>
+                <div class="teachers__image">
+                    <img src="./img/prof1.jpg" alt="Profesor_1">
+                </div>
+                <div class="teachers__name">
+                    <h4>Juan Vazquez</h4>
+                </div>
+                <div class="teachers__socialmedia">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-square"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+            <div class="teachers__box">
+                <div class="teachers__title">
+                    <h3>Merengue</h3>
+                </div>
+                <div class="teachers__image">
+                    <img src="./img/prof2.jpg" alt="Profesor_2">
+                </div>
+                <div class="teachers__name">
+                    <h4>Maria Rodriguez</h4>
+                </div>
+                <div class="teachers__socialmedia">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-square"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+            <div class="teachers__box">
+                <div class="teachers__title">
+                    <h3>Bachata</h3>
+                </div>
+                <div class="teachers__image">
+                    <img src="./img/prof3.jpg" alt="Profesor_3">
+                </div>
+                <div class="teachers__name">
+                    <h4>Valeria Lopez</h4>
+                </div>
+                <div class="teachers__socialmedia">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-square"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+            <div class="teachers__box">
+                <div class="teachers__title">
+                    <h3>Break Dance</h3>
+                </div>
+                <div class="teachers__image">
+                    <img src="./img/prof4.jpg" alt="Profesor_4">
+                </div>
+                <div class="teachers__name">
+                    <h4>Ruben Ramones</h4>
+                </div>
+                <div class="teachers__socialmedia">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-square"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+        </div>
+    </section> <!--Final de section-->
+
+    <section class="descuento"> <!--Inicio de section-->
+        <div class="descuento__box">
+            <div class="descuento__text">
+                <h4>20% de</h4>
+                <h4>Descuento</h4>
+                <h5>En todas nuestras clases</h5>
+                <h5>Por tiempo limitado</h5>
+            </div>
+            <div class="descuento__image">
+                <img src="./img/des.png" alt="">
+            </div>
+        </div>
+    </section> <!--Final de section-->
+
     <footer class="footer"> <!--Inicio del Footer-->
         <div class="footer__container">
             <div class="footer__logo">
                 <a href="index.html">
-                    <img src="./img/logo.png" alt="logo">
+                    <img src="./img/Frame.svg" alt="logo">
                 </a>
             </div>
-            <p>Siguenos en:</p>
-            <a href="#" class="footer__enlaces">
-                <img src="./img/whatsapp.png" alt="whatsapp">
-            </a>
-            <a href="#" class="footer__enlaces">
-                <img src="./img/facebook.png" alt="facebook">
-            </a>
-            <a href="#" class="footer__enlaces">
-                <img src="./img/instagram.png" alt="instagram">
-            </a>
+            <div class="footer__redesSociales">
+                <p>Siguenos en:</p>
+                <a href="#" class="footer__enlaces">
+                    <img src="./img/whatsapp.png" alt="whatsapp">
+                </a>
+                <a href="#" class="footer__enlaces">
+                    <img src="./img/facebook.png" alt="facebook">
+                </a>
+                <a href="#" class="footer__enlaces">
+                    <img src="./img/instagram.png" alt="instagram">
+                </a>
+            </div>
         </div>
     </footer> <!--Final del Footer-->
 </body>
