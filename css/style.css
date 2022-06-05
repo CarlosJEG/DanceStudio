@@ -5,6 +5,9 @@
     box-sizing: content-box;
     font-family: 'Itim', cursive;
 }
+
+/* Navegation */
+
 header{
     width: 100%;
     height: 100px;
@@ -51,6 +54,9 @@ header{
     border-bottom: 1px #806C92 solid;
     color: #806C92;
 }
+
+/* Main Section*/
+
 main{
     background-image: url(../img/header.jpg);
     background-repeat: no-repeat;
@@ -84,6 +90,9 @@ main{
     grid-column: 6/8;
     grid-row: 4/5;
 }
+
+/* Course Section */
+
 .cursos{
     box-shadow: 0px 0px 18px #1A1A1A inset;
     padding-top: 20px;
@@ -126,10 +135,13 @@ main{
     transform: scale(1.05);
     transition: all 0.5s;
 }
+
+/* Discount Section */
+
 .descuento{
     width: 100%;
     height: 390px;
-    background-image: url(../img/article.jpg);
+    background-image: url(../img/Descuento.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -169,6 +181,9 @@ main{
     width: 100%;
     height: 100%;
 }
+
+/* Footer Section */
+
 .footer{
     width: 100%;
     height: 80px;
@@ -205,7 +220,15 @@ main{
 .footer__redesSociales p{
     color: white;
     font-size: 20px;
+    margin-right: 15px;
 }
+.footer__enlaces i{
+    font-size: 40px;
+    color: white;
+}
+
+/* Calendar Page */
+
 .calendar{
     width: 100%;
     height: 58rem;
@@ -279,16 +302,6 @@ main{
 }
 .calendar__text button:hover{
     background-color: #594a66;
-}
-.calendar__box{
-    width: 50%;
-    height: 240px;
-    background-color: #1A1A1A;
-    border-radius: 10px;
-    box-shadow: 12px 12px 10px #806C92;
-    display: flex;
-    align-items: center;
-    gap: 30px;
 }
 
 /* Teachers page */
@@ -427,4 +440,76 @@ main{
 .contact__form button:hover{
     background-color: #594a66;
     transition: all 0.5s;
+}
+
+/* Class Page */
+
+.class{
+    width: 100%;
+    height: 58rem;
+    box-shadow: 0px 0px 18px #1A1A1A inset;
+}
+.class__container{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.class__title{
+    width: 100%;
+    height: 50px;
+    margin-top: 14px;
+    font-size: 40px;
+    text-align: center;
+}
+.class__box{
+    width: 60%;
+    height: 240px;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    box-shadow: 12px 12px 10px #806C92;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.class__image{
+    width: 27%;
+    height: 90%;
+    margin-left: 14px;
+}
+.class__image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.class__image h3{
+    width: 30%;
+}
+.class__text{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.class__text h3{
+    font-size: 37px;
+}
+.class__text button{
+    color: white;
+    width: 100px;
+    height: 45px;
+    background-color: #806C92;
+    border: none;
+    border-radius: 7px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0px 10px;
+}
+.class__text button:hover{
+    background-color: #594a66;
 }
