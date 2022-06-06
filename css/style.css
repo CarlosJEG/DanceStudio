@@ -22,7 +22,7 @@ header{
     margin: 0 auto;
 }
 .nav__logo{
-    width: 25%;
+    width: 255px;
     height: 100%;
 }
 .nav__logo a{
@@ -54,6 +54,21 @@ header{
     border-bottom: 1px #806C92 solid;
     color: #806C92;
 }
+.nav__manu{
+    display: none;
+    margin-top: 35px;
+    font-size: 25px;
+    color: #806C92;
+    cursor: pointer;
+}
+@media screen and (max-width: 880px) {
+    .nav__box{
+        display: none;
+    }
+    .nav__manu{
+        display: block
+    }
+}
 
 /* Main Section*/
 
@@ -75,7 +90,7 @@ main{
 .container h1{
     color: white;
     font-size: 80px;
-    grid-column: 2/6;
+    grid-column: 2/9;
     grid-row: 2/3;
 }
 .container h2{
@@ -90,17 +105,34 @@ main{
     grid-column: 6/8;
     grid-row: 4/5;
 }
+@media screen and (max-width: 632px) {
+    .container h2{
+        font-size: 70px;
+        grid-column: 3/6;
+    }
+    .container h3{
+        font-size: 70px;
+        grid-column: 3/6;
+    }
+    .container h1{
+        font-size: 70px;
+    }
+}
+@media screen and (max-width: 412px) {
+    .container h1{
+        grid-column: 1/9;
+    }
+}
 
 /* Course Section */
 
 .cursos{
     box-shadow: 0px 0px 18px #1A1A1A inset;
     padding-top: 20px;
-    height: 590px;
+    padding-bottom: 80px;
 }
 .box{
     width: 85%;
-    height: 500px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -154,7 +186,7 @@ main{
     justify-content: space-around;
 }
 .descuento__text{
-    width: 40%;
+    width: 400px;
     height: 90%;
     display: flex;
     flex-direction: column;
@@ -181,6 +213,20 @@ main{
     width: 100%;
     height: 100%;
 }
+@media screen and (max-width: 920px) {
+    .descuento__text h4,
+    .descuento__text h5{
+        font-size: 30px;
+    }
+    .descuento__text{
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 640px) {
+    .descuento__image{
+        display: none;
+    }
+}
 
 /* Footer Section */
 
@@ -198,7 +244,7 @@ main{
     justify-content: space-between;
 }
 .footer__logo{
-    width: 25%;
+    width: 260px;
     height: 100%;
 }
 .footer__logo a{
@@ -211,9 +257,10 @@ main{
     height: 100%;
 }
 .footer__redesSociales{
-    width: 30%;
+    width: 75%;
     height: 100%;
     display: flex;
+    justify-content: end;
     align-items: center;
     gap: 14px;
 }
@@ -225,6 +272,11 @@ main{
 .footer__enlaces i{
     font-size: 40px;
     color: white;
+}
+@media screen and (max-width: 430px) {
+    .footer__redesSociales p{
+        display: none;
+    }
 }
 
 /* Calendar Page */
@@ -303,6 +355,17 @@ main{
 .calendar__text button:hover{
     background-color: #594a66;
 }
+@media screen and (max-width: 812px) {
+    .calendar__text{
+        justify-content: space-evenly;
+    }
+    .calendar__text h3{
+        font-size: 25px;
+    }
+    .calendar__image{
+        width: 30%;
+    }
+}
 
 /* Teachers page */
 
@@ -328,7 +391,7 @@ main{
     padding-bottom: 20px;
 }
 .teachers__box{
-    width: 23%;
+    width: 220px;
     height: 350px;
     border-radius: 8px;
     box-shadow: 10px 10px 25px #806C92;
@@ -397,7 +460,7 @@ main{
     padding-bottom: 20px;
 }
 .contact__container{
-    width: 23%;
+    width: 315px;
     height: 400px;
     margin: 0 auto;
     border-radius: 8px;
