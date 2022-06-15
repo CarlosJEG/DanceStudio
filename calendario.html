@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://kit.fontawesome.com/65837733d8.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>DanceStudio</title>
 </head>
+
 <body>
-    <header> <!--Inicio del Header-->
+    <header>
+        <!--Inicio del Header-->
         <nav class="nav">
             <div class="nav__logo">
                 <a href="./index.html">
@@ -36,48 +41,39 @@
             </ul>
             <span class="nav__manu"><i class="fa-solid fa-bars"></i></span>
         </nav>
-    </header> <!--Final del Header-->
+    </header>
+    <!--Final del Header-->
 
-    <section class="calendar"> <!--Inicio de section-->
-        <div class="calendar__container">
-            <h2 class="calendar__title">Calendario</h2>
-            <div class="calendar__boxes animate__animated animate__fadeInDown">
-                <div class="calendar__image">
-                    <img src="./img/salsa.jpg" alt="">
-                </div>
-                <div class="calendar__text">
-                    <h3>Salsa</h3>
-                    <h3>Martes y Jueves</h3>
-                    <h3>desde el 31 de mayo</h3>
-                    <h3>hasta el 28 de julio</h3>
-                </div>
-            </div>
-            <div class="calendar__boxes animate__animated animate__fadeInLeft">
-                <div class="calendar__image">
-                    <img src="./img/bachata.jpg" alt="">
-                </div>
-                <div class="calendar__text">
-                    <h3>Bachata</h3>
-                    <h3>Lunes y Miercoles</h3>
-                    <h3>desde el 30 de mayo</h3>
-                    <h3>hasta el 27 de julio</h3>
-                </div>
-            </div>
-            <div class="calendar__boxes animate__animated animate__fadeInUp">
-                <div class="calendar__image">
-                    <img src="./img/vermas.jpg" alt="">
-                </div>
-                <div class="calendar__text">
-                    <h3>Break Dance</h3>
-                    <h3>Sabados y Domingos</h3>
-                    <h3>desde el 28 de mayo</h3>
-                    <h3>hasta el 31 de julio</h3>
-                </div>
+    <h2 class="calendar__title">Calendario</h2>
+    <div class="card-group">
+        <div class="card">
+            <img src="./img/salsa.jpg" class="card-img-top" alt="Salsa" width="100%">
+            <div class="card-body">
+                <h5 class="card-title">Salsa</h5>
+                <p class="card-text">Martes y Jueves</p>
+                <p class="card-text"><small class="text-muted">Desde el 31 de mayo hasta el 28 de julio</small></p>
             </div>
         </div>
-    </section> <!--Final de section-->
+        <div class="card">
+            <img src="./img/bachata.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Bachata</h5>
+                <p class="card-text">Lunes y Miercoles</p>
+                <p class="card-text"><small class="text-muted">Desde el 30 de mayo hasta el 27 de julio</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/vermas.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Break Dance</h5>
+                <p class="card-text">Sabados y Domingos</p>
+                <p class="card-text"><small class="text-muted">Desde el 28 de mayo hasta el 31 de julio</small></p>
+            </div>
+        </div>
+    </div>
 
-    <section class="descuento"> <!--Inicio de section-->
+    <section class="descuento">
+        <!--Inicio de section-->
         <div class="descuento__box">
             <div class="descuento__text">
                 <h4>20% de</h4>
@@ -89,9 +85,11 @@
                 <img src="./img/des.png" alt="">
             </div>
         </div>
-    </section> <!--Final de section-->
+    </section>
+    <!--Final de section-->
 
-    <footer class="footer"> <!--Inicio del Footer-->
+    <footer class="footer">
+        <!--Inicio del Footer-->
         <div class="footer__container">
             <div class="footer__logo">
                 <a href="index.html">
@@ -111,6 +109,11 @@
                 </a>
             </div>
         </div>
-    </footer> <!--Final del Footer-->
+    </footer>
+    <!--Final del Footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
