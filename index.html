@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://kit.fontawesome.com/65837733d8.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>DanceStudio</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg"> <!--Inicio del Header-->
+    <nav class="navbar navbar-expand-lg bg-dark"> <!--Inicio del Header-->
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="./index.html">
                 <img src="./img/Frame.svg" alt="logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -42,17 +46,19 @@
     </nav> <!--Final del Header-->
 
     <main> <!--Inicio de Main-->
-        <div class="container">
-            <h1 class="animate__animated animate__backInLeft">Bienvenido a</h1>
+        <div class="container main_content">
+            <h2 class="animate__animated animate__backInLeft row">Bienvenido a</h2>
             <h2 class="animate__animated animate__backInRight">Dance</h2>
-            <h3 class="animate__animated animate__backInRight">Studio</h3>
+            <h2 class="animate__animated animate__backInRight">Studio</h2>
         </div>
     </main> <!--Final de Main-->
 
     <section class="academySection"> <!--Inicio de section-->
         <div class="academySection__container">
-            <h4 class="academySection__textoPrincipal">El estudio ofrece una amplia gama de oportunidades y profesores.</h4>
-            <h5 class="academySection__textoSegundario">Nuestra reputación de proporcionar los más altos estándares de enseñanza es lo que creemos que nos distingue.</h5>
+            <h4 class="academySection__textoPrincipal">El estudio ofrece una amplia gama de oportunidades y profesores.
+            </h4>
+            <h5 class="academySection__textoSegundario">Nuestra reputación de proporcionar los más altos estándares de
+                enseñanza es lo que creemos que nos distingue.</h5>
             <button class="academySection__nosotros">Sobre Nosotros</button>
         </div>
     </section> <!--Final de section-->
@@ -60,7 +66,8 @@
     <section class="gallerySection"> <!--Inicio de section-->
         <div class="gallerySection__nuestraGaleria">
             <h4 class="gallerySection__title">Nuestra galeria</h4>
-            <p class="gallerySection__texto">Creemos firmemente que la educación en danza desarrolla y enseña a cada participante individual física, social, emocional y artísticamente.</p>
+            <p class="gallerySection__texto">Creemos firmemente que la educación en danza desarrolla y enseña a cada
+                participante individual física, social, emocional y artísticamente.</p>
             <a href="#" class="gallerySection__leerMas">Leer Mas</a>
         </div>
         <div class="gallerySection__imageGallery">
@@ -74,26 +81,23 @@
         </div>
     </section> <!--Final de section-->
 
-    <div class="container-fluid row justify-content-md-center">
-        <div class="card" style="width: 18rem;"> <!--Inicio de section-->
-            <img src="./img/salsa.jpg" class="card-img-top" alt="salsa">
-            <div class="card-body">
-            <p class="card-text">Curso de Salsa</p>
+    <section class="cursos"> <!--Inicio de section-->
+        <h4>Cursos Disponibles</h4>
+        <div class="box">
+            <div class="box__content">
+                <img src="./img/salsa.jpg" alt="">
+                <p class="box__text">Salsa</p>
+            </div>
+            <div class="box__content">
+                <img src="./img/bachata.jpg" alt="">
+                <p class="box__text">Bachata</p>
+            </div>
+            <div class="box__content">
+                <img src="./img/vermas.jpg" alt="">
+                <p class="box__text">Ver mas</p>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="./img/bachata.jpg" class="card-img-top" alt="bachata">
-            <div class="card-body">
-            <p class="card-text">Curso de Salsa</p>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="./img/vermas.jpg" class="card-img-top" alt="vermas">
-            <div class="card-body">
-            <p class="card-text">Curso de Salsa</p>
-            </div>
-        </div> <!--Final de section-->
-    </div>
+    </section> <!--Final de section-->
 
     <section class="conociendoAlProfesor"> <!--Inicio de section-->
         <div class="conociendoAlProfesor__foto">
@@ -102,7 +106,10 @@
         <div class="conociendoAlProfesor__texto">
             <h4 class="conociendoAlProfesor__textoPrincipal">Conoce a nuestro profesor</h4>
             <h5 class="conociendoAlProfesor__nombre">Liam Thompson</h5>
-            <p class="conociendoAlProfesor__descripcion">Liam creció inspirado por sus padres. Todos los viernes regresaban de sus lecciones, movían la mesa de la sala para hacer espacio y practicaban lo que habían aprendido. Cuando era niño, Liam observaba los movimientos que hacían y luego los probaba con su madre. Liam comenzó a tomar lecciones formales a los 8 años y tiene muchos títulos estatales y regionales.</p>
+            <p class="conociendoAlProfesor__descripcion">Liam creció inspirado por sus padres. Todos los viernes
+                regresaban de sus lecciones, movían la mesa de la sala para hacer espacio y practicaban lo que habían
+                aprendido. Cuando era niño, Liam observaba los movimientos que hacían y luego los probaba con su madre.
+                Liam comenzó a tomar lecciones formales a los 8 años y tiene muchos títulos estatales y regionales.</p>
         </div>
     </section> <!--Final de section-->
 
@@ -113,11 +120,13 @@
             </div>
             <div class="reconocimientos__award">
                 <h4>Mejor estudio de baile del año 2020</h4>
-                <p>Otorgado a un estudio que demuestre excelencia en la educación de baile a través de una variedad de estilos de baile, divisiones y edad.</p>
+                <p>Otorgado a un estudio que demuestre excelencia en la educación de baile a través de una variedad de
+                    estilos de baile, divisiones y edad.</p>
             </div>
             <div class="reconocimientos__award">
                 <h4>Premio de estudio</h4>
-                <p>El "Premio People's Choice" de IDA es determinado por una votación popular y se lleva a cabo en línea.</p>
+                <p>El "Premio People's Choice" de IDA es determinado por una votación popular y se lleva a cabo en
+                    línea.</p>
             </div>
             <div class="reconocimientos__award">
                 <h4>Premios de la competencia de baile Step Up</h4>
@@ -125,20 +134,24 @@
             </div>
             <div class="reconocimientos__award">
                 <h4>Premio a la Mejor Actuación en Convención</h4>
-                <p>Nuestra actuación ganadora de premios presenta e invita a asistir a los Industry Dance Awards en Hollywood</p>
+                <p>Nuestra actuación ganadora de premios presenta e invita a asistir a los Industry Dance Awards en
+                    Hollywood</p>
             </div>
             <div class="reconocimientos__award">
                 <h4>RENDIMIENTO EXCEPCIONAL</h4>
-                <p>Estas actuaciones recibieron el prestigioso honor de recibir el premio IDA Outstanding Performance Award.</p>
+                <p>Estas actuaciones recibieron el prestigioso honor de recibir el premio IDA Outstanding Performance
+                    Award.</p>
             </div>
             <div class="reconocimientos__award">
                 <h4>Grandes premios en general</h4>
-                <p>La cantidad de premios otorgados depende de la cantidad de participantes dentro de cada división de edad, nivel de experiencia.</p>
+                <p>La cantidad de premios otorgados depende de la cantidad de participantes dentro de cada división de
+                    edad, nivel de experiencia.</p>
             </div>
         </div>
     </section> <!--Final de section-->
 
-    <section class="descuento"> <!--Inicio de section-->
+    <section class="descuento">
+        <!--Inicio de section-->
         <div class="descuento__box">
             <div class="descuento__text">
                 <h4>20% de</h4>
@@ -150,9 +163,11 @@
                 <img src="./img/des.png" alt="descuento">
             </div>
         </div>
-    </section> <!--Final de section-->
+    </section>
+    <!--Final de section-->
 
-    <footer class="footer"> <!--Inicio del Footer-->
+    <footer class="footer">
+        <!--Inicio del Footer-->
         <div class="footer__container">
             <div class="footer__logo">
                 <a href="index.html">
@@ -172,7 +187,11 @@
                 </a>
             </div>
         </div>
-    </footer> <!--Final del Footer-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </footer>
+    <!--Final del Footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
