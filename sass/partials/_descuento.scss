@@ -1,0 +1,58 @@
+/* Discount Section */
+
+.descuento{
+    width: 100%;
+    height: 390px;
+    background-image: url(../img/Descuento.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .descuento__box{
+        @include container( 85%, 100%, 0 auto);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .descuento__text{
+            width: 400px;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .descuento__text h4{
+            width: 100%;
+            height: 60px;
+            color: white;
+            font-size: 50px;
+        }
+        .descuento__text h5{
+            width: 100%;
+            height: 60px;
+            color: white;
+            font-size: 40px;
+        }
+        .descuento__image{
+            width: 400px;
+            height: 90%;
+        }
+        .descuento__image img{
+            width: map-get($imgSize, width);
+            height: map-get($imgSize, height);
+        }
+    }
+}
+@media screen and (max-width: 920px) {
+    .descuento__text h4,
+    .descuento__text h5{
+        font-size: 30px;
+    }
+    .descuento__text{
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 640px) {
+    .descuento__image{
+        display: none;
+    }
+}

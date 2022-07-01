@@ -1,0 +1,71 @@
+/* Price Section*/
+
+.price{
+    width: 100%;
+    box-shadow: 0px 0px 18px #1A1A1A inset;
+    padding: 40px 0px; 
+
+    .price__title{
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px; 
+
+    }
+    .price__container{
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px; 
+
+        .price__cards:hover{
+            transform: scale(1.02);
+            transition: all 0.5s; 
+        }
+        .price__cards{
+            background-color: #1A1A1A;
+            width: 350px;
+            height: 450px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 8px;
+            box-shadow: 10px 10px 25px #806C92;
+            transition: all 0.5s; 
+
+            .price__membresia{
+                display: inline;
+                color: white;
+                font-size: 20px; 
+            }
+            .price__money{
+                display: inline;
+                color: #806C92;
+                font-size: 55px; 
+            }
+            .price__description {
+                display: inline;
+                color: white;
+                font-size: 18px;
+                padding: 0px 50px; 
+            }
+            .price__button {
+                background-color: #806C92;
+                color: white;
+                border: none;
+                padding: 15px;
+                border-radius: 8px;
+                transition: all 0.5s;
+                cursor: pointer; 
+            }
+            .price__button:hover {
+                background-color: #594a66;
+                transition: all 0.5s; 
+            }
+        }
+    }
+}

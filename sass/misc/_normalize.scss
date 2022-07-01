@@ -1,0 +1,18 @@
+/* Normalize */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: $fontcolor;
+}
+img{
+    width: 100%;
+}

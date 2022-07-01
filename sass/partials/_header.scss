@@ -1,0 +1,24 @@
+/* Header */
+
+.navbar{
+    height: 90px;
+
+    .navbar-brand{
+        @extend .navbar;
+    }
+    .navbar-brand img{
+        width: map-get($imgSize, width);
+        height: map-get($imgSize, height);
+    }
+    .navbar-collapse{
+        justify-content: end;
+
+        .navbar-nav{
+            gap: 15px;
+
+            .nav-item a{
+            color: var(--bs-light);
+            }
+        }
+    }
+}

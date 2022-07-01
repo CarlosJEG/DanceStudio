@@ -1,0 +1,46 @@
+/* Events Section */
+
+.events{
+    width: 100%;
+    box-shadow: 0px 0px 18px #1A1A1A inset;
+    padding: 40px 0px; 
+
+    .events__container{
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .events__title{
+            width: 100%;
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .events__box{
+            position: relative;
+            width: 300px;
+            height: 305px;
+        }
+        .events__box img{
+            width: map-get($imgSize, width);
+            height: 225px;
+        }
+        .events__description{
+            font-size: 20px;
+        }
+        .events__fecha{
+            position: absolute;
+            width: 50px;
+            height: 80px;
+            top: 0px;
+            right: 0px;
+            background-color: white;
+            border: 1px #594a66 solid;
+            text-align: center;
+        }
+    }
+}
