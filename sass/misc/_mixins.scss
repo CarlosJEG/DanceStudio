@@ -1,5 +1,6 @@
-@mixin container ($width, $height, $margin) {
+@mixin container ($width, $height, $margin, $display) {
     width: $width;
     height: $height;
     margin: $margin;
+    display: $display;
 }

@@ -1,23 +1,91 @@
 /* Header */
 
 .navbar{
-    height: 90px;
+    width: 100%;
+    height: 100px;
+    background-color: $primarycolor;
 
-    .navbar-brand{
-        @extend .navbar;
+    &__container{
+        @include container (85%, 100%, 0 auto, flex);
+        justify-content: space-between;
+
+        .navbar__logo{
+            display: inline-block;
+            width: 250px;
+            height: map-get($imgSize, height);
+        }
+        .navbar__logo img{
+            width: 250px;
+            height: map-get($imgSize, height);
+        }
+        .navbar__menu{
+            @include container (40%, 100%, 0, flex);
+            align-items: center;
+            gap: 20px;
+            justify-content: end;
+
+            .navbar__link{
+                color: $fontcolor;
+                text-decoration: none;
+                padding: 9px;
+                border-bottom: 1px $primarycolor solid;
+                transition: all 0.3s;
+            }
+            .navbar__link:hover{
+                color: $secondarycolor;
+                border-bottom: 1px $secondarycolor solid;
+                transition: all 0.3s;
+            }
+        }
+        .fa-bars{
+            font-size: 40px;
+            color: $fontcolor;
+            cursor: pointer;
+            line-height: 95px;
+            display: none;
+        }
     }
-    .navbar-brand img{
-        width: map-get($imgSize, width);
-        height: map-get($imgSize, height);
+}
+@media (max-width: 860px) {
+    .navbar__container .fa-bars{
+        display: block;
     }
-    .navbar-collapse{
-        justify-content: end;
+    .navbar__container .show{
+        transform: translateX(0%) !important;
+        transition: all 0.3s;
+    }
+    .navbar__container .navbar__menu{
+        flex-direction: column;
+        background-color: $primarycolor;
+        height: 300px;
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        z-index: 1;
+        gap: 0px;
+        transform: translateX(-100%);
+        transition: all 0.3s;
 
-        .navbar-nav{
-            gap: 15px;
+        .navbar__item{
+            width: map-get($imgSize, width);
+            height: 60px;
 
-            .nav-item a{
-            color: var(--bs-light);
+            .navbar__link{
+                text-align: center;
+                line-height: 56px;
+                display: inline-block;
+                width: map-get($imgSize, width);
+                height: map-get($imgSize, height);
+                padding: 0px;
+                border-bottom: none;
+                transition: all 0.3s;
+            }
+            .navbar__link:hover{
+                color: $fontcolor;
+                background-color: $tertiarycolor;
+                border-radius: 8px;
+                transition: all 0.3s;
             }
         }
     }
