@@ -4,3 +4,10 @@
     margin: $margin;
     display: $display;
 }
+
+@mixin Title ($color, $font, $center, $padding) {
+    color: $color;
+    font-size: $font;
+    text-align: $center;
+    padding: $padding;
+}
