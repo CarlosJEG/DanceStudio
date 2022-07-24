@@ -1,52 +1,71 @@
 .contact{
     width: 100%;
     box-shadow: 0px 0px 18px #1A1A1A inset;
+    padding-bottom: 80px;
 
     .contact__container{
-        @include container (85%, 500px, 0 auto, flex);
+        @include container (85%, 100%, 0 auto, flex);
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
 
         .contact__form{
-            width: 50%;
+            width: 612px;
             height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
-
-            .contact__background{
-                
-            }
-            
-            .contact__box{
-                width: 41%;
-                display: flex;
-                justify-content: space-between;
-            }
-            .contact__box-ask{
-                width: 41%;
-                display: flex;
-                flex-direction: column;
-                gap: 2px;
-            }
         }
         .contact__form p{
             font-size: 20px;
-            width: 85%;
+            width: 65%;
             margin: 0 auto;
             text-align: center;
             margin-bottom: 40px;
         }
-        .contact__form input{
-            margin-bottom: 20px;
-            margin-left: 10px;
+        .contact__background{
+            width: 400px;
+            height: 360px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 8px;
+            background-color: $secondarycolor;
+            box-shadow: 0px 0px 18px #1A1A1A;
         }
-        .contact__form input:nth-of-type(1){
-            margin-left: 12px;
-         }
-        .contact__form input:nth-of-type(3){
-           margin-left: 27px;
+        .contact__box{
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .contact__box label{
+            color: $fontcolor;
+        }
+        .contact__box-ask{
+            width: 60%;
+        }
+        .contact__box-ask label{
+            color: $fontcolor;
+        }
+        .contact__background button{
+            padding: 10px 40px;
+                border: none;
+                background-color: $tertiarycolor;
+                color: $fontcolor;
+                border-radius: 8px;
+                cursor: pointer;
         }
         .contact__information{
-           /* @extend .contact__form*/
+            width: 400px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .contact__adress{
+            width: 50%;
+            height: 65px;
         }
     }
 }
